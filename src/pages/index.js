@@ -22,7 +22,7 @@ class Input extends Component {
       submitedMessage: ""
     };
   }
-
+  
   inputChange = e => {
     let message = e.target.value
       .split(' ')
@@ -42,11 +42,12 @@ class Input extends Component {
         </Helmet>
         <div>
           <h1><span role="img" aria-label="B">🅱️</span>ext <span role="img" aria-label="B">🅱️</span>onverter</h1>
+          <p><span role="img" aria-label="B">🅱️</span>ust <span role="img" aria-label="B">🅱️</span>ress <span role="img" aria-label="B">🅱️</span>ubmit <span role="img" aria-label="B">🅱️</span>utton</p>
         </div>
         <div>
         <form>
           <input type="text" name="message" onChange={this.inputChange} />
-          <button type="button" onClick={this.displayNameHandler}>
+          <button type="button" onClick ={this.displayNameHandler}>
           <span role="img" aria-label="B">🅱️</span>onvert <span role="img" aria-label="B">🅱️</span>our <span role="img" aria-label="B">🅱️</span>ext
           </button>
         </form>
